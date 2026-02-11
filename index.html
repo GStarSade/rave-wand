@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Wand Message ✨</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: radial-gradient(circle at top, #2b1055, #000);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card {
+      padding: 2.5rem 1.5rem;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.4;
+      opacity: 0.95;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1 id="title">✨ Hey cutie ✨</h1>
+    <p id="message">Loading magic…</p>
+
+    <div class="footer">
+      This was consensual 💖  
+      You may now return to vibing.
+    </div>
+  </div>
+
+  <script>
+    const messages = [
+      "You have been magically flirted with 🪄",
+      "The wand has chosen you ✨",
+      "Certified cutie detected 💕",
+      "You passed the vibe check 😌",
+      "This interaction grants +2 charisma",
+      "Rave wizard says hi 💫",
+      "You just unlocked a smile (hopefully)",
+      "Bonk (affectionate)",
+      "If you're smiling right now, it worked",
+      "✨ Main character energy ✨"
+    ];
+
+    const randomMessage =
+      messages[Math.floor(Math.random() * messages.length)];
+
+    document.getElementById("message").textContent = randomMessage;
+  </script>
+</body>
+</html>
