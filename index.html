@@ -1,81 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>✨ Wand Message ✨</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🜃 Relic of the Menagerie 🜃</title>
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: radial-gradient(circle at top, #2b1055, #000);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      color: white;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Georgia", serif;
+    background: radial-gradient(circle at 30% 20%, #1f3b2c, #0d0d0d 70%);
+    color: #f5f3e7;
+    overflow: hidden;
+  }
 
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .card {
-      padding: 2.5rem 1.5rem;
-      max-width: 420px;
-      width: 100%;
-    }
+  .card {
+    padding: 2.5rem 1.5rem;
+    max-width: 420px;
+    width: 100%;
+    backdrop-filter: blur(6px);
+  }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
+  h1 {
+    font-size: 1.9rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.2rem;
+  }
 
-    p {
-      font-size: 1.3rem;
-      line-height: 1.4;
-      opacity: 0.95;
-    }
+  .message {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    min-height: 3.5rem;
+  }
 
-    .footer {
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
-      opacity: 0.6;
-    }
-  </style>
+  .sigil {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .footer {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  .glow {
+    animation: shimmer 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes shimmer {
+    from { text-shadow: 0 0 5px #7cffc4; }
+    to { text-shadow: 0 0 18px #a0ffe6; }
+  }
+</style>
 </head>
 
 <body>
-  <div class="card">
-    <h1 id="title">✨ Hey cutie ✨</h1>
-    <p id="message">Loading magic…</p>
 
-    <div class="footer">
-      This was consensual 💖  
-      You may now return to vibing.
-    </div>
+<div class="card">
+  <div class="sigil">🜃 ✧ 🜂</div>
+
+  <h1 class="glow">The Menagerie Has Noticed You</h1>
+
+  <div class="message" id="message">
+    Awakening ancient enchantments...
   </div>
 
-  <script>
-    const messages = [
-      "You have been magically flirted with 🪄",
-      "The wand has chosen you ✨",
-      "Certified cutie detected 💕",
-      "You passed the vibe check 😌",
-      "This interaction grants +2 charisma",
-      "Rave wizard says hi 💫",
-      "You just unlocked a smile (hopefully)",
-      "Bonk (affectionate)",
-      "If you're smiling right now, it worked",
-      "✨ Main character energy ✨"
-    ];
+  <div class="footer">
+    Midwinter revels. Consent is sacred.  
+    Return now to your frolics, mystical one.
+  </div>
+</div>
 
-    const randomMessage =
-      messages[Math.floor(Math.random() * messages.length)];
+<script>
+const messages = [
+  "A goblin somewhere approves of your energy.",
+  "The fae court whispers: you glow tonight.",
+  "A satyr would absolutely dance with you.",
+  "The beasts gather — and you are among them.",
+  "Pearlescent wings tremble in your presence.",
+  "Midwinter magic clings to you.",
+  "The forest would keep you.",
+  "You have been marked by revelry.",
+  "The old gods of glitter smile upon you.",
+  "The Menagerie sees your wild heart."
+];
 
-    document.getElementById("message").textContent = randomMessage;
-  </script>
+const randomMessage =
+  messages[Math.floor(Math.random() * messages.length)];
+
+document.getElementById("message").textContent = randomMessage;
+</script>
+
 </body>
 </html>
