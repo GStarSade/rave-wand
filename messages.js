@@ -21,11 +21,11 @@ window.MESSAGES = {
         {
             greeting: "Hey gorgeous 🌸",
             text: "I was just fluttering around looking for someone interesting… and then you appeared. May I join you for this adventure?"
-        }
+        },
         {
             greeting: "Well hello you magical creature 🦄",
             text: "You look like you stepped straight out of a fairytale. Mind if this fairy joins your story for a bit?"
-        }
+        },
         {
             greeting: "Hey there, enchanting one 🌟", 
             text: "I just fluttered in from the forest and happened to land right in front of you. Coincidence? I only believe in fate."
