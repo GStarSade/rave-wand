@@ -19,7 +19,7 @@ window.MESSAGES = {
       text: "Your sparkle level has been deemed ‘illegally charming’ by three separate faeries."
     },
     {
-      greeting: "Greetings, soft enchantment 🌸",
+      greeting: "Greetings, \n soft enchantment 🌸",
       text: "Your aura leaves glittery footprints wherever you wander."
     }
   ],
