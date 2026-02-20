@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Your Enchantment ✨</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .message-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 2px solid;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .message-container.mild { border-color: #00ff87; }
+        .message-container.medium { border-color: #ff1493; }
+        .message-container.spicy { border-color: #ff0064; }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .mild h2 { color: #00ff87; }
+        .medium h2 { color: #ff1493; }
+        .spicy h2 { color: #ff0064; }
+        
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 1.5rem 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container" id="container">
+        <h2 id="greeting"></h2>
+        <div class="message" id="message"></div>
+        <a href="index.html" class="back-button">← Choose Another</a>
+    </div>
+
+    <script src="messages.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const level = urlParams.get('level') || 'mild';
+        
+        const container = document.getElementById('container');
+        const greeting = document.getElementById('greeting');
+        const messageEl = document.getElementById('message');
+        
+        container.classList.add(level);
+        
+        // Get random message from the selected level
+        const messages = window.MESSAGES[level];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        
+        greeting.textContent = randomMessage.greeting;
+        messageEl.textContent = randomMessage.text;
+    </script>
+</body>
+</html>
