@@ -29,7 +29,7 @@ window.MESSAGES = {
         {
             greeting: "Hey there, enchanting one 🌟", 
             text: "I just fluttered in from the forest and happened to land right in front of you. Coincidence? I only believe in fate."
-        }
+        },
     ],
 
   medium: [
@@ -52,7 +52,7 @@ window.MESSAGES = {
         {
             greeting: "Mmm hello there 🌹",
             text: "Under the faerie moon, inhibitions fade. Let me hold you under my spell for a while..."
-        }
+        },
     ],
     
     spicy: [
@@ -75,6 +75,6 @@ window.MESSAGES = {
         {
             greeting: "Hey sexy creature 😍",
             text: "The menagerie celebrates surviving winter by indulging every desire. Mine involves you, less clothing, and no rules."
-        }
+        },
     ]
 };
