@@ -1,97 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨ Enchanted Messages ✨</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            font-family: 'Georgia', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 400px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(45deg, #00ff87, #ff1493);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 20px rgba(0, 255, 135, 0.3);
-        }
-        .subtitle {
-            color: #b388ff;
-            margin-bottom: 2rem;
-            font-style: italic;
-        }
-        .button {
-            display: block;
-            margin: 1rem auto;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-            border: 2px solid;
-            border-radius: 15px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-family: inherit;
-        }
-        .mild {
-            background: rgba(0, 255, 135, 0.1);
-            border-color: #00ff87;
-            color: #00ff87;
-        }
-        .mild:hover {
-            background: rgba(0, 255, 135, 0.3);
-            box-shadow: 0 0 20px rgba(0, 255, 135, 0.5);
-        }
-        .medium {
-            background: rgba(255, 20, 147, 0.1);
-            border-color: #ff1493;
-            color: #ff1493;
-        }
-        .medium:hover {
-            background: rgba(255, 20, 147, 0.3);
-            box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
-        }
-        .spicy {
-            background: rgba(255, 0, 100, 0.1);
-            border-color: #ff0064;
-            color: #ff0064;
-        }
-        .spicy:hover {
-            background: rgba(255, 0, 100, 0.3);
-            box-shadow: 0 0 20px rgba(255, 0, 100, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🜃 Relic of the Menagerie 🜃</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Georgia", serif;
+      background: radial-gradient(circle at 30% 20%, #1f3b2c, #0d0d0d 70%); /* old theme */ [web:33][web:46]
+      color: #f5f3e7;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card {
+      padding: 2.5rem 1.5rem;
+      max-width: 420px;
+      width: 100%;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+
+    .sigil {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      opacity: 0.8;
+    }
+
+    .glow {
+      animation: shimmer 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes shimmer {
+      from { text-shadow: 0 0 5px #7cffc4; }
+      to { text-shadow: 0 0 18px #a0ffe6; }
+    }
+
+    .button {
+      display: block;
+      margin: 0.75rem auto;
+      padding: 0.9rem 1.5rem;
+      font-size: 1.1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(245, 243, 231, 0.4);
+      text-decoration: none;
+      color: #f5f3e7;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+      transition: all 0.25s ease;
+    }
+
+    .button span {
+      margin-left: 0.4rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* subtle per‑level tints */
+    .button.mild:hover {
+      border-color: #7cffc4;
+      box-shadow: 0 0 14px rgba(124, 255, 196, 0.6);
+    }
+
+    .button.medium:hover {
+      border-color: #ff83c6;
+      box-shadow: 0 0 14px rgba(255, 131, 198, 0.6);
+    }
+
+    .button.spicy:hover {
+      border-color: #ff4b9a;
+      box-shadow: 0 0 18px rgba(255, 75, 154, 0.8);
+    }
+
+    .footer {
+      margin-top: 2.2rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>✨ You've Been Enchanted ✨</h1>
-        <p class="subtitle">Choose your magical intensity...</p>
-        
-        <a href="message.html?level=mild" class="button mild">
-            🌶️ Playful
-        </a>
-        
-        <a href="message.html?level=medium" class="button medium">
-            🌶️🌶️ Flirty
-        </a>
-        
-        <a href="message.html?level=spicy" class="button spicy">
-            🌶️🌶️🌶️ Daring
-        </a>
+  <div class="card">
+    <div class="sigil">🜃 ✧ 🜂</div>
+
+    <h1 class="glow">The Menagerie Has Noticed You</h1>
+    <div class="subtitle">
+      Choose your spell strength, fae‑touched one.
     </div>
+
+    <a href="message.html?level=mild" class="button mild">
+      🌶️ Playful <span>(soft glitter)</span>
+    </a>
+
+    <a href="message.html?level=medium" class="button medium">
+      🌶️🌶️ Flirty <span>(teasing hex)</span>
+    </a>
+
+    <a href="message.html?level=spicy" class="button spicy">
+      🌶️🌶️🌶️ Daring <span>(wild glamour)</span>
+    </a>
+
+    <div class="footer">
+      Midwinter revels. Consent is sacred.  
+      Return now to your frolics, mystical one.
+    </div>
+  </div>
 </body>
 </html>

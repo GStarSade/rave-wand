@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨ Your Enchantment ✨</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            font-family: 'Georgia', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-        .message-container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 500px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            border: 2px solid;
-            backdrop-filter: blur(10px);
-            animation: fadeIn 0.5s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        .message-container.mild { border-color: #00ff87; }
-        .message-container.medium { border-color: #ff1493; }
-        .message-container.spicy { border-color: #ff0064; }
-        
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .mild h2 { color: #00ff87; }
-        .medium h2 { color: #ff1493; }
-        .spicy h2 { color: #ff0064; }
-        
-        .message {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin: 1.5rem 0;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            color: #fff;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        .back-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Your Fae Enchantment ✨</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Georgia", serif;
+      background: radial-gradient(circle at 30% 20%, #1f3b2c, #0d0d0d 70%); /* old theme */ [web:33][web:46]
+      color: #f5f3e7;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card {
+      padding: 2.5rem 1.5rem;
+      max-width: 420px;
+      width: 100%;
+      backdrop-filter: blur(6px);
+    }
+
+    .sigil {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      opacity: 0.8;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    .message {
+      font-size: 1.35rem;
+      line-height: 1.5;
+      min-height: 3.5rem;
+    }
+
+    .footer {
+      margin-top: 2.2rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+
+    .glow {
+      animation: shimmer 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes shimmer {
+      from { text-shadow: 0 0 5px #7cffc4; }
+      to { text-shadow: 0 0 18px #a0ffe6; }
+    }
+
+    /* per‑level accent on heading + sigil */
+    .mild h1, .mild .sigil {
+      color: #a0ffe6;
+    }
+
+    .medium h1, .medium .sigil {
+      color: #ff9ad6;
+      text-shadow: 0 0 14px rgba(255, 154, 214, 0.8);
+    }
+
+    .spicy h1, .spicy .sigil {
+      color: #ff4b9a;
+      text-shadow: 0 0 18px rgba(255, 75, 154, 1);
+    }
+  </style>
 </head>
+
 <body>
-    <div class="message-container" id="container">
-        <h2 id="greeting"></h2>
-        <div class="message" id="message"></div>
-        <a href="index.html" class="back-button">← Back </a>
+  <div class="card" id="card">
+    <div class="sigil">🜃 ✧ 🜂</div>
+
+    <h1 class="glow" id="greeting">The Menagerie Has Noticed You</h1>
+
+    <div class="message" id="message">
+      Awakening ancient enchantments...
     </div>
 
-    <script src="messages.js"></script>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const level = urlParams.get('level') || 'mild';
-        
-        const container = document.getElementById('container');
-        const greeting = document.getElementById('greeting');
-        const messageEl = document.getElementById('message');
-        
-        container.classList.add(level);
-        
-        // Get random message from the selected level
-        const messages = window.MESSAGES[level];
-        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-        
-        greeting.textContent = randomMessage.greeting;
-        messageEl.textContent = randomMessage.text;
-    </script>
+    <div class="footer">
+      Midwinter revels. Consent is sacred.  
+      Return now to your frolics, mystical one.
+    </div>
+  </div>
+
+  <script src="messages.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const level = params.get("level") || "mild";
+
+    const card = document.getElementById("card");
+    const greetingEl = document.getElementById("greeting");
+    const messageEl = document.getElementById("message");
+
+    card.classList.add(level);
+
+    const pool = window.MESSAGES[level] || window.MESSAGES.mild;
+    const chosen = pool[Math.floor(Math.random() * pool.length)];
+
+    greetingEl.textContent = chosen.greeting;
+    messageEl.textContent = chosen.text;
+  </script>
 </body>
 </html>
