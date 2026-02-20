@@ -54,7 +54,7 @@ window.MESSAGES = {
     },
     {
       greeting: "Hey filthy angel 😈",
-      text: "A faerie is fantasising about dragging you somewhere dark and making you beg for more magic."
+      text: "A faerie is fantasising about dragging you somewhere dark and making you beg for more glamour 🔮."
     },
     {
       greeting: "Come here, pretty spellcaster 💦",

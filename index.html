@@ -31,10 +31,9 @@
     }
 
     h1 {
-      font-size: 1.9rem;
-      letter-spacing: 0.05em;
-      margin-bottom: 1.2rem;
-      text-transform: uppercase;
+      font-size: 1.7rem; /* was 1.9rem */
+      line-height: 1.1; /* prevents wrapping */
+      white-space: nowrap; /* prevents line break */
     }
 
     .subtitle {
@@ -81,19 +80,29 @@
     /* subtle per‑level tints */
     .button.mild:hover {
       border-color: #7cffc4;
-      box-shadow: 0 0 14px rgba(124, 255, 196, 0.6);
+      background: rgba(124, 255, 196, 0.15);
+      box-shadow: 0 0 24px rgba(124, 255, 196, 0.6);
+      transform: translateY(-2px);
     }
 
     .button.medium:hover {
       border-color: #ff83c6;
-      box-shadow: 0 0 14px rgba(255, 131, 198, 0.6);
+      background: rgba(255, 131, 198, 0.15);
+      box-shadow: 0 0 24px rgba(255, 131, 198, 0.6);
+      transform: translateY(-2px);
     }
 
     .button.spicy:hover {
       border-color: #ff4b9a;
-      box-shadow: 0 0 18px rgba(255, 75, 154, 0.8);
+      background: rgba(255, 75, 154, 0.2);
+      box-shadow: 0 0 28px rgba(255, 75, 154, 0.9);
+      transform: translateY(-2px);
     }
 
+    .sigil {
+     /* existing */
+      animation: shimmer 3s ease-in-out infinite alternate;
+    }
     .footer {
       margin-top: 2.2rem;
       font-size: 0.8rem;
