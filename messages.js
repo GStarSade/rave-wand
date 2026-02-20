@@ -38,6 +38,10 @@ window.MESSAGES = {
             text: "Tell me… are you always this enchanting, or is it these fairy lights?"
         },
         {
+            greeting: "Hello, woodland whisper 🌿",
+            text: "The mossy paths light up when you walk by. Care to lead this fae somewhere magical?"
+        },
+        {
             greeting: "Well well... 🔥",
             text: "A mischievous faerie wants to cast a spell on you. Warning: side effects include butterflies and wanting more."
         },
@@ -52,6 +56,10 @@ window.MESSAGES = {
         {
             greeting: "Mmm hello there 🌹",
             text: "Under the faerie moon, inhibitions fade. Let me hold you under my spell for a while..."
+        },
+        {
+            greeting: "Hey, silken shadow 💋",
+            text: "That look in your eyes has this fae imagining moonlight tangled in your hair."
         },
     ],
     
@@ -75,6 +83,10 @@ window.MESSAGES = {
         {
             greeting: "Hey sexy creature 😍",
             text: "The menagerie celebrates surviving winter by indulging every desire. Mine involves you, less clothing, and no rules."
+        },
+        {
+            greeting: "Hey, my perfect ruin 😈",
+            text: "I want to pin your wrists with vines and make the stars jealous of your moans."
         },
     ]
 };
