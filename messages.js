@@ -2,71 +2,71 @@
 
 window.MESSAGES = {
   mild: [
-    {
-      greeting: "Hey cutie ✨",
-      text: "A shy little faerie just tripped over their own wings staring at you."
-    },
-    {
-      greeting: "Hello, luminous one 🌙",
-      text: "The faerie court is passing notes about how good you look tonight."
-    },
-    {
-      greeting: "Psst, starlit stranger 💫",
-      text: "Somewhere, a pixie has decided you’re their new favourite distraction."
-    },
-    {
-      greeting: "Oh hi, moonbeam 🧚‍♀️",
-      text: "Your sparkle level has been deemed ‘illegally charming’ by three separate faeries."
-    },
-    {
-      greeting: "Greetings, \n soft enchantment 🌸",
-      text: "Your aura leaves glittery footprints wherever you wander."
-    }
-  ],
+        {
+            greeting: "Hey cutie ✨",
+            text: "A mystical creature has blessed you with their magic. May your night be filled with enchantment and wonder!"
+        },
+        {
+            greeting: "Hello beautiful soul 🌙",
+            text: "The faerie have noticed your radiant energy. Dance with us under the moonlight?"
+        },
+        {
+            greeting: "Greetings, magical one 🦋",
+            text: "Your aura sparkles like fairy dust. Let's create some mischief together tonight!"
+        },
+        {
+            greeting: "Well hello there 💫",
+            text: "The forest whispers your name. Care to explore its mysteries with a fellow creature?"
+        },
+        {
+            greeting: "Hey gorgeous 🌸",
+            text: "A playful satyr has spotted you across the meadow. Come frolic with the magical menagerie!"
+        }
+    ],
 
   medium: [
-    {
-      greeting: "Hey pretty fae thing 💕",
-      text: "One of the court has a crush and absolutely zero chill about it."
-    },
-    {
-      greeting: "Well, hello trouble ✨",
-      text: "You look like someone a faerie should pin against a velvet curtain and kiss slowly."
-    },
-    {
-      greeting: "Hi delicious sparkle 🌹",
-      text: "A bold little faerie wants to see how you taste when the lights get softer."
-    },
-    {
-      greeting: "Oh, enchanting creature 😈",
-      text: "Your lips are currently the subject of a very inappropriate faerie council meeting."
-    },
-    {
-      greeting: "Hey, dangerous darling 🌙",
-      text: "There’s a faerie out here imagining you, tangled in glitter and whispered spells."
-    }
-  ],
-
-  spicy: [
-    {
-      greeting: "Oh, wicked faerie 🔥",
-      text: "Someone wants you pressed up against a wall, wings ruffled, forgetting your own name."
-    },
-    {
-      greeting: "Hey filthy angel 😈",
-      text: "A faerie is fantasising about dragging you somewhere dark and making you beg for more glamour 🔮."
-    },
-    {
-      greeting: "Come here, pretty spellcaster 💦",
-      text: "Your body looks like something to worship slowly, then ruin delightfully."
-    },
-    {
-      greeting: "Hi, delicious chaos 🖤",
-      text: "There’s a faerie who wants glitter on your throat, teeth on your skin, and absolutely no moderation."
-    },
-    {
-      greeting: "Oh, star‑kissed menace 🌶️",
-      text: "Tonight’s prophecy: you, a reckless fae, too many hands, and not nearly enough clothing."
-    }
-  ]
+        {
+            greeting: "Hey there, tempting one 💋",
+            text: "The way you move has caught this creature's eye. Mind if I steal a dance... or more?"
+        },
+        {
+            greeting: "Well well... 🔥",
+            text: "A mischievous faerie wants to cast a spell on you. Warning: side effects include butterflies and wanting more."
+        },
+        {
+            greeting: "Hello delicious 😏",
+            text: "The beasts of this realm are gathering... and you look like the perfect company for tonight's festivities."
+        },
+        {
+            greeting: "Hey beautiful creature 💕",
+            text: "Your energy is intoxicating. This elf has toys and tricks, and I'd love to share them with you."
+        },
+        {
+            greeting: "Mmm hello there 🌹",
+            text: "Under the faerie moon, inhibitions fade. Let me hold you under my spell for a while..."
+        }
+    ],
+    
+    spicy: [
+        {
+            greeting: "Hey you delicious thing 🔥",
+            text: "The dark desires of midwinter call. This beast wants to feast on you... in the best possible way."
+        },
+        {
+            greeting: "Oh hello... 😈",
+            text: "A creature of carnal magic has chosen you. Ready to release some primal energy together?"
+        },
+        {
+            greeting: "Well aren't you tempting 💦",
+            text: "The faerie realm's boundaries blur tonight. Want to explore what happens when we cross a few more lines?"
+        },
+        {
+            greeting: "Fuck, you're gorgeous 🖤",
+            text: "This mystical beast faerie is hungry, and you look absolutely delectable. Care to be devoured?"
+        },
+        {
+            greeting: "Hey sexy creature 😍",
+            text: "The menagerie celebrates surviving winter by indulging every desire. Mine involves you, less clothing, and no rules."
+        }
+    ]
 };
