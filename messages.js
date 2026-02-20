@@ -4,30 +4,38 @@ window.MESSAGES = {
   mild: [
         {
             greeting: "Hey cutie ✨",
-            text: "A mystical creature has blessed you with their magic. May your night be filled with enchantment and wonder!"
-        },
-        {
-            greeting: "Hello beautiful soul 🌙",
-            text: "The faerie have noticed your radiant energy. Dance with us under the moonlight?"
-        },
-        {
-            greeting: "Greetings, magical one 🦋",
-            text: "Your aura sparkles like fairy dust. Let's create some mischief together tonight!"
+            text: "I swear I didn’t sprinkle *that* glitter on you!"
         },
         {
             greeting: "Well hello there 💫",
+            text: "The fae have noticed your radiant energy. Dance with us under the moonlight?"
+        },
+        {
+            greeting: "Greetings, magical one 🦋",
+            text: "Your aura sparkles like fairy dust. Care to create some mischief tonight?"
+        },
+        {
+            greeting: "Hello moonbean 🌙",
             text: "The forest whispers your name. Care to explore its mysteries with a fellow creature?"
         },
         {
             greeting: "Hey gorgeous 🌸",
-            text: "A playful satyr has spotted you across the meadow. Come frolic with the magical menagerie!"
+            text: "I was just fluttering around looking for someone interesting… and then you appeared. May I join you for this adventure?"
+        }
+        {
+            greeting: "Well hello you magical creature 🦄",
+            text: "You look like you stepped straight out of a fairytale. Mind if this fairy joins your story for a bit?"
+        }
+        {
+            greeting: "Hey there, enchanting one 🌟", 
+            text: "I just fluttered in from the forest and happened to land right in front of you. Coincidence? I only believe in fate."
         }
     ],
 
   medium: [
         {
             greeting: "Hey there, tempting one 💋",
-            text: "The way you move has caught this creature's eye. Mind if I steal a dance... or more?"
+            text: "Tell me… are you always this enchanting, or is it these fairy lights?"
         },
         {
             greeting: "Well well... 🔥",
@@ -54,7 +62,7 @@ window.MESSAGES = {
         },
         {
             greeting: "Oh hello... 😈",
-            text: "A creature of carnal magic has chosen you. Ready to release some primal energy together?"
+            text: "I can feel it in my wings. Come here—let me see if you’re as tempting up close."
         },
         {
             greeting: "Well aren't you tempting 💦",
